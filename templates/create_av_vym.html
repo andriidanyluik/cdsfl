@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %} Головна{% endblock %}
+{% block body %}
+<div class="container-fluid">
+    <div class="col">
+        <a href="/journal"><h4>Створення нового запису Журналу дефектів</h4></a>
+        <form method="post">
+            <p>Назва РЕМу</p>
+            <input type="text" name="rem" id="rem" class="form-control"><br>
+            <p>Назва ОДГ</p>
+            <input type="text" name="odg" id="odg" class="form-control"><br>
+            <p>Назва РЕМу</p>
+            <input type="date" name="datez" id="datez" class="form-control"><br>
+            <p>Назва РЕМу</p>
+            <input type="date" name="datepo" id="datepo" class="form-control"><br>
+            <p>Назва РЕМу</p>
+            <input type="text" name="zazem" id="zazem" class="form-control"><br>
+            <p>Назва РЕМу</p>
+            <input type="text" name="pokaz" id="pokaz" class="form-control"><br>
+            <p>Назва РЕМу</p>
+            <input type="text" name="name_who" id="name_who" class="form-control"><br>
+            <p>Назва РЕМу</p>
+            <textarea  name="workrza" id="workrza" class="form-control"></textarea><br>
+            <p>Назва РЕМу</p>
+            <textarea name="pr" id="pr" class="form-control"></textarea><br>
+            <input type="submit" class="btn btn-success" value="Відправити"><br>
+        </form>
+    </div>
+</div>
+{% endblock %}

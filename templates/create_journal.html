@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}Створення журналу дефектів{% endblock %}
+{% block body %}
+<div class="container-fluid">
+    <div class="col">
+        <a href="/journal"><h4>Створення нового запису Журналу дефектів</h4></a>
+        <form method="post">
+            <p>Номер</p>
+            <!--<input type="number" name="id" id="id" class="form-control"><br>-->
+            <p>Місце і характер дефекту. Прізвище особи, яка внесла запис</p>
+            <input type="text" name="place" id="place" class="form-control"><br>
+
+            <p>Рішення керівництва, термін усунення, дата, час</p>
+            <input type="text" name="decision" id="decision" class="form-control"><br>
+            <p>Прізвище особи, якій доручено усунення дефекту, дата, час</p>
+            <input type="text" name="who_fix" id="who_fix" class="form-control"><br>
+            <p>Відмітка про усунення дефекту, дата, час</p>
+            <input type="text" name="fix" id="fix" class="form-control"><br>
+            <p>Відмітка оперативного персоналу, дата, час</p>
+            <textarea  name="operation_personal" id="operation_personal" class="form-control"></textarea><br>
+
+            <input type="submit" class="btn btn-success" value="Відправити"><br>
+        </form>
+    </div>
+</div>
+{% endblock %}

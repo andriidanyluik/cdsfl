@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %} Журнал дефектів{% endblock %}
+{% block body %} <div class="container-fluid">
+    <h1>Журнал дефектів і неполадок ________________ РЕМ ___________ ОДГ</h1>
+
+
+    <table class="table">
+      <thead>
+        <tr>
+            <th scope="col">№ п/п</th>
+            <th scope="col">Дата і час запису.</th>
+            <th scope="col">Місце і характер дефекту. Прізвище особи, яка внесла запис.</th>
+            <th scope="col">Рішення керівництва, термін усунення, дата, час.</th>
+            <th scope="col">Прізвище особи, якій доручено усунення дефекту, дата, час.</th>
+            <th scope="col">Відмітка про усунення дефекту, дата, час.</th>
+            <th scope="col">Відмітка оперативного персоналу, дата, час.</th>
+            <th scope="col"></th>
+        </tr>
+      </thead>
+    <tbody>
+
+        <tr>
+
+            <th scope="row">1</th>
+            <td>2020-08-20 23:05:47.779414</td>
+            <td>123123!</td>
+            <td>123123!</td>
+            <td>1231!</td>
+            <td>231231!</td>
+            <td>231231!</td>
+            <td><a class="btn btn-danger" href="/change//1">Редагувати.</a></td>
+
+        </tr> {% endblock %}
